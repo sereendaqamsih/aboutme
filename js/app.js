@@ -1,4 +1,18 @@
 'use strict';
+let userName = prompt('Whats your name please?');
+
+alert ('welcome '+ userName +' we wil ask you a few questions about Sereen Aldaqamsih.');
+
+let userApprove = prompt('Are you ready?').toLowerCase();
+
+
+switch (userApprove) {
+case 'no':
+break;
+case 'n':
+break;
+
+default: 
 
 let userFrom = prompt('Are you in Jordan?').toLowerCase();
 
@@ -72,3 +86,25 @@ case 'no':
         console.log(userExp);
         break;}
 
+ let userUni= prompt("Sereen graduated from Just university?").toLowerCase();
+
+switch (userUni){
+    case 'yes':
+        console.log('sereen graduted from yarmouk university');
+    break;
+    case 'y':
+        console.log('sereen graduted from yarmouk university');
+        break;
+        case 'no':
+            alert('Sereen graduted from Yarmouk University 2014');
+            break;
+            case 'n':
+                alert('Sereen graduted from Yarmouk University 2014');
+                break;
+                default:
+                    console.log(userUni);
+                    break;
+}
+
+
+}
