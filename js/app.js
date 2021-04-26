@@ -50,3 +50,25 @@ switch (userWork)
      console.log(userWork);
      break;
 }
+
+let userExp = prompt("Sereen didn't work any where befor?").toLowerCase();
+switch (userExp)
+{
+    case 'yes':
+        console.log("i've experience");
+        
+        break;
+        case 'y':
+            console.log("i've experience");
+            break;
+        
+case 'no':
+    alert ('I have 4 years experience as electrical engineer');
+     break;
+    case 'n':
+        alert ('I have 4 years experience as electrical engineer');
+    break;
+    default:
+        console.log(userExp);
+        break;}
+
