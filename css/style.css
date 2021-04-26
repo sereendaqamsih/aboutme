@@ -1,3 +1,32 @@
 img {
     width:300px;
+    float: left;
 }
+head{
+    background-color: beige;
+}
+body {
+    background-color: beige;
+}
+h1 {
+    text-align: left;
+    font-style: italic;
+    font-size: medium;
+}
+a {
+    text-decoration: none;
+    color: brown;
+    font-style: bold;
+}
+li {
+    margin: 80px;
+    color: brown;
+    border: 1px solid brown;
+    display: inline-block;
+  }
+
+  p {
+text-align: center;
+color: brown;
+margin: 15px;
+  }
