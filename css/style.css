@@ -18,7 +18,7 @@ a {
     color: brown;
     font-style: bold;
 }
-li {
+.one {
     margin: 80px;
     color: brown;
     border: 1px solid brown;
@@ -28,5 +28,5 @@ li {
   p {
 text-align: center;
 color: brown;
-margin: 15px;
+margin: 25px;
   }
