@@ -1,5 +1,7 @@
 'use strict';
 let score=0;
+
+
 let userName = prompt('Whats your name please?').toUpperCase();
 
 alert ('Welcome '+ userName +' we wil ask you a few questions about Sereen Aldaqamsih.');
@@ -14,6 +16,8 @@ case 'n':
 break;
 
 default: 
+
+let qustion1 = function(){
 
 let userFrom = prompt('Are you in Jordan?').toLowerCase();
 
@@ -45,7 +49,11 @@ case 'n':
          break;
 }
 
+}
+qustion1();
 
+
+let qustion2 =function(){
 let userWork = prompt('Is Sereen engineer?').toLowerCase();
 
 switch (userWork)
@@ -74,7 +82,11 @@ switch (userWork)
      console.log ('Sereen studied Electrical power engineering.');
      break;
 }
+}
 
+qustion2();
+
+let qustion3 =function(){
 let userExp = prompt("Sereen didn't work any where befor?").toLowerCase();
 switch (userExp)
 {
@@ -103,8 +115,13 @@ case 'no':
         console.log(userExp);
         console.log("I have 4 years experience as electrical engineer");
         break;}
+}
 
- let userUni= prompt("Sereen graduated from Just university?").toLowerCase();
+qustion3();
+
+let qustion4 = function(){
+
+let userUni= prompt("Sereen graduated from Just university?").toLowerCase();
 
 switch (userUni){
     case 'yes':
@@ -130,7 +147,10 @@ switch (userUni){
                     console.log('sereen graduted from yarmouk university');
                     break;
 }
+}
+qustion4();
 
+let qustion5 =function(){
 let userChild= prompt("Is Sereen a mother?").toLowerCase();
 switch (userChild){
     case 'yes':
@@ -157,11 +177,14 @@ switch (userChild){
                    console.log('Sereen mother for one child,her name Yara');
                    break;
         }
+    }
+    qustion5();
 
+    let qustion6 = function(){
         let flag =false;
         let fla =false;
         let answer=false;
-    
+
     let userTry =[1990,1992,1993,1994];
     let userYear= parseInt(prompt('Guess when year Sereen born? '));
    for (let i=0;i<3;i++){if (userYear==1991)
@@ -178,7 +201,11 @@ break; }}
 if (flag===false) {alert ('You are faraway try again.');
 userYear= parseInt(prompt('Guess when year Sereen born? ')); }}}
 if (answer===false){ alert ('Thank you for trying, Sereen born in 1991');console.log ('question 6 wrong answer.');}
+    }
 
+    qustion6();
+
+    let qustion7 = function(){
 let userKnow=prompt('Guess the name of jordanian city sereen like it?').toLowerCase();
 console.log(userKnow);
 let userAnswer=['irbid','amman','salt','aqaba','petra'];
@@ -203,7 +230,8 @@ for (let i=0; i<userAnswer.length;i++)
 else {break;}}
 if (result===false){ alert('sorry youre answer wrong, the true answer is irbid or amman or salt,aqaba,petra.');}
 
-
+}
+qustion7();
 
 
     alert( 'welcome '+userName+', Thank you for your time.your score in this game its '+score);
