@@ -38,9 +38,13 @@ case 'y':
           break;
 case 'no':
              console.log('the user outside Jordan, Sereen lives in Jordan.');
+             alert ('Sereen lives in Jordan .');
+
          break;
 case 'n':
              console.log('the user outside Jordan,Sereen lives in Jordan.');
+             alert ('Sereen lives in Jordan .');
+
          break;
 
     default:
@@ -72,10 +76,13 @@ switch (userWork)
 
         break;
     case 'no':
-        console.log ('Sereen studied Electrical power engineering.');
+        console.log ('false answer, Sereen studied Electrical power engineering.');
+        alert ('false answer,Sereen studied Electrical power engineering.');
         break;
     case 'n':
         console.log ('Sereen studied Electrical power engineering.');
+        alert ('false answer,Sereen studied Electrical power engineering.');
+
         break;
  default:
      console.log(userWork);
@@ -92,10 +99,12 @@ switch (userExp)
 {
     case 'yes':
         console.log("i've experience");
-        
+        alert ("False answer,i've experience");
         break;
         case 'y':
             console.log("i've experience");
+            alert ("False answer,i've experience");
+
             break;
         
 case 'no':
@@ -126,26 +135,28 @@ let userUni= prompt("Sereen graduated from Just university?").toLowerCase();
 switch (userUni){
     case 'yes':
         console.log('sereen graduted from yarmouk university');
+        alert ('False answer,sereen graduted from yarmouk university');
     break;
     case 'y':
         console.log('sereen graduted from yarmouk university');
-        break;
-        case 'no':
-            alert('Sereen graduted from Yarmouk University 2014');
-            console.log('sereen graduted from yarmouk university');
-            score= score+1;
+        alert ('False answer,sereen graduted from yarmouk university');
 
-            break;
-            case 'n':
+    break;
+        case 'no':
+        alert('Sereen graduted from Yarmouk University 2014');
+        console.log('sereen graduted from yarmouk university');
+        score= score+1;
+
+    break;
+        case 'n':
                 alert('Sereen graduted from Yarmouk University 2014');
                 console.log('sereen graduted from yarmouk university');
                 score= score+1;
-
                 break;
-                default:
-                    console.log(userUni);
-                    console.log('sereen graduted from yarmouk university');
-                    break;
+    default:
+            console.log(userUni);
+            console.log('sereen graduted from yarmouk university');
+            break;
 }
 }
 qustion4();
@@ -166,11 +177,11 @@ switch (userChild){
 
             break;
             case 'no':
-         
+         alert('False answer,Sereen mother for one child,her name Yara')
            console.log('Sereen mother for one child,her name Yara');
            break;
            case 'n':
-               console.log('Sereen mother for one child,her name Yara');
+               console.log('False answer,Sereen mother for one child,her name Yara');
                break;
                default:
                    console.log(userChild);
@@ -179,33 +190,53 @@ switch (userChild){
         }
     }
     qustion5();
-
+//Q6
     let qustion6 = function(){
         let flag =false;
         let fla =false;
         let answer=false;
 
-    let userTry =[1990,1992,1993,1994];
+    // let userTry =[1990,1992,1993,1994];
     let userYear= parseInt(prompt('Guess when year Sereen born? '));
-   for (let i=0;i<3;i++){if (userYear==1991)
-       {alert ('Yes, You are true, Sereen born 14/5/1991'); flag= true; fla=true;answer=true;console.log('question 6 right answer');             score= score+1;
+
+   for (let i=0; i<3; i++)
+   {
+       if (userYear==1991){
+       alert ('Yes, You are true, Sereen born 14/5/1991');
+        flag= true;
+         fla=true;
+         answer=true;
+         console.log('question 6 right answer');       
+         score= score+1;
 ;       break;}
        else {    
-for (let i=0; i <userTry.length;i++) {
-if (userYear==userTry[i]) { 
-alert ('you are draw near,try again.');
+//for (let i=0; i <userTry.length;i++) {}
+if (userYear<1991) { 
+alert ('too low');
 userYear= parseInt(prompt('Guess when year Sereen born? '));
-flag=true;
-fla=true;
-break; }}
-if (flag===false) {alert ('You are faraway try again.');
-userYear= parseInt(prompt('Guess when year Sereen born? ')); }}}
-if (answer===false){ alert ('Thank you for trying, Sereen born in 1991');console.log ('question 6 wrong answer.');}
+ }
+if (userYear>1991){
+    alert('too high');
+userYear= parseInt(prompt('Guess when year Sereen born? '));
+}}
+if (userYear==1991){
+    alert ('Yes, You are true, Sereen born 14/5/1991');
+     flag= true;
+      fla=true;
+      answer=true;
+      console.log('question 6 right answer');       
+      score= score+1;
+;       break;}}
+//if (flag===false) {alert ('You are faraway try again.');
+//userYear= parseInt(prompt('Guess when year Sereen born? ')); }}
+if (answer===false){ 
+alert ('Thank you for trying, Sereen born in 1991');
+console.log ('question 6 wrong answer.');}
+    
     }
-
     qustion6();
-
-    let qustion7 = function(){
+// Q7
+let qustion7 = function(){
 let userKnow=prompt('Guess the name of jordanian city sereen like it?').toLowerCase();
 console.log(userKnow);
 let userAnswer=['irbid','amman','salt','aqaba','petra'];
@@ -226,7 +257,9 @@ for (let i=0; i<userAnswer.length;i++)
         break;
     }
    }
-   if (books===false)    {userKnow=prompt('Guess the name of jordanian city sereen like it?').toLowerCase();}
+   if (books===false)   
+    {alert ('False answer, try again');
+        userKnow=prompt('Guess the name of jordanian city sereen like it?').toLowerCase();}
 else {break;}}
 if (result===false){ alert('sorry youre answer wrong, the true answer is irbid or amman or salt,aqaba,petra.');}
 

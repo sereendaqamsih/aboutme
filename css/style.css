@@ -13,6 +13,7 @@ h1 {
     font-style: italic;
     font-size: medium;
 }
+
 a {
     text-decoration: none;
     color: brown;
@@ -29,4 +30,21 @@ a {
 text-align: center;
 color: brown;
 margin: 25px;
+  }
+  #exp {
+      background-color: rgb(228, 155, 128);
+      color:brown;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      border: double white 25px;
+      margin: 75px;
+  }
+  #writer {
+
+    background-color: darkgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:brown;
+    border: double white 25px;
+
+    margin:75px;
+
   }
