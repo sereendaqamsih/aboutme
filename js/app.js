@@ -235,11 +235,12 @@ console.log ('question 6 wrong answer.');}
     
     }
     qustion6();
+let userAnswer=['irbid','amman','salt','aqaba','petra'];
+
 // Q7
 let qustion7 = function(){
 let userKnow=prompt('Guess the name of jordanian city sereen like it?').toLowerCase();
 console.log(userKnow);
-let userAnswer=['irbid','amman','salt','aqaba','petra'];
 console.log(userAnswer);
 let final=false;
 let result=false;
@@ -265,9 +266,18 @@ if (result===false){ alert('sorry youre answer wrong, the true answer is irbid o
 
 }
 qustion7();
+//'irbid','amman','salt','aqaba','petra'
+//let userguess=[];
+for (let i=0; i<userAnswer.length ;i++){
+    let one=userAnswer[0];
+    let two=userAnswer[1];
+    let three=userAnswer[2];
+    let four=userAnswer[3];
+    let five=userAnswer[4];
+    if (i>=4){
+    alert ('this is my favourit city '+one+two+three+four+five);
+}}
 
-
-    alert( 'welcome '+userName+', Thank you for your time.your score in this game its '+score);
-    alert ('This is the true answer for all 7 question: serren in jordan,shes an engineer,she was worked as electrical engineer,graduated from yarmouk university,sereen mother for one child, was born in 1991,sereen like irbid city and amman,aqaba,petra and salt.');
+alert( 'welcome '+userName+', Thank you for your time.your score in this game its '+score);
     break;
     }
