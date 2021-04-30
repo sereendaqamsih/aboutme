@@ -25,3 +25,17 @@ if (answer===false){ alert ('Thank you for trying, Sereen born in 1991');console
     }
 
     qustion6();
+
+    a {
+    text-decoration: none;
+    color: brown;
+    font-style: bold;}
+    #menu {
+      border:solid rosybrown 10px;
+  }
+.one {
+    margin: 80px;
+    color: brown;
+    border: 1px solid brown;
+    display: inline-block;
+  }
